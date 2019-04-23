@@ -1197,6 +1197,7 @@ header {
   position: relative;
   height: 100%;
   background-color: #eeeeee;
+  background-image: url(/img/op.png)
 }
 header::before {
   position: absolute;
