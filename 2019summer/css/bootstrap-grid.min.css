@@ -48,7 +48,8 @@ html {
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
 	margin-right: -15px;
-	margin-left: -15px
+	margin-left: -15px;
+	margin-bottom: -12px;
 }
 .no-gutters {
 	margin-right: 0;

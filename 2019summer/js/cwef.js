@@ -1,5 +1,4 @@
 $(function(){
-
 	"use strict";
 	// Start of use strict
 	$('a.page-scroll[href*="#"]:not([href="#"])').click(function() {
@@ -15,7 +14,39 @@ $(function(){
 		}
 	});
 	// Closes responsive menu when a scroll trigger link is clicked
-	var width = $(window).width();
+	var width = $(window).width(), height = $(window).height();
+	var iPhone = (navigator.userAgent.match(/iPhone/i) != null) || (navigator.userAgent.match(/iPod/i) != null);
+	var android = (navigator.userAgent.match(/android/i) != null);
+	var iPad = navigator.userAgent.match(/iPad/i) != null;
+	// opening影片
+	if (width > 769) {
+		$('video source.mp4').attr('src', 'img/2019cwef-summer-opening-pc.mp4');
+	};
+	if (iPad) {
+		iPhone = false;
+		android = false;
+		$('video').load();
+		$('video source.mp4').attr('src', 'img/2019cwef-summer-opening-pad.mp4');
+	}
+	if (iPhone) {
+		iPad = false;
+		android = false;
+		$('video').load();
+		$("video").attr('poster', 'img/2019cwef-summer-opening-mobile.png');
+		$('video source.mp4').attr('src', 'img/2019cwef-summer-opening-mobile.mp4');
+	}
+	if (android) {
+		iPad = false;
+		iPhone = false;
+		var video = document.querySelector('video');
+		$('video').load();
+		$("video").attr('poster', 'img/2019cwef-summer-opening-mobile.png');
+		$('video source.mp4').attr('src', 'img/2019cwef-summer-opening-mobile.mp4');
+		window.addEventListener('touchstart', function videoStart() {
+			video.play();
+			this.removeEventListener('touchstart', videoStart);
+		});
+	}
 	if ( width < 769 ) {
 		$('.page-scroll').click(function() {
 			$('.navbarDiv').slideUp();
@@ -31,14 +62,12 @@ $(function(){
 		$('.note').addClass('active');
 	});
 	$('a.trend-more-btn').click(function() {
-//		$(this).slideUp();
-//		$('.trend-mobile-none').slideDown();
-//		$('.note').addClass('active');
+		//$(this).slideUp();
+		//$('.trend-mobile-none').slideDown();
+		//$('.note').addClass('active');
 		$(this).slideUp();
 		$('.trend-mobile-none').addClass('trend-mobile-none-active');
 	});
-	
-	
 	if ( width >= 769 ){
 		var containerWidth = $('.container').width();
 		var btnLeft = ($(window).width() - containerWidth ) /2 ;
@@ -74,20 +103,19 @@ $(function(){
 	};
 	var wrapperMenu = document.querySelector('.wrapper-menu');
 	wrapperMenu.addEventListener('click', function(){
-		wrapperMenu.classList.toggle('open');  
+		wrapperMenu.classList.toggle('open');
 	})
 	// Collapse now if page is not at top
 	navbarCollapse();
 	// Collapse the navbar when page is scrolled
 	$(window).scroll(navbarCollapse);
 	if (!location.href.match('review|report|download|ppt')) {
-			new WOW().init();
-		
+		new WOW().init();
 		// Activate scrollspy to add active class to navbar items on scroll
-	$('body').scrollspy({
-		target: '#mainNav',
-		offset: 155
-	});
+		$('body').scrollspy({
+			target: '#mainNav',
+			offset: 155
+		});
 		$('.popup-with-zoom-anim').magnificPopup({
 			type: 'inline',
 			fixedContentPos: false,
@@ -133,7 +161,6 @@ $(function(){
 				smartSpeed: 600,
 				items: 1,
 				animateIn: "zoomIn",
-	
 			});
 		} else {
 			$('.slide-mobile').owlCarousel({
@@ -180,63 +207,38 @@ $(function(){
 		setTimeout(countdown, 1000);
 	}
 	countdown();
-	
-
-	
-//nav
-
+	//nav
 	if ( width >= 769 ){
-		
 		$("#dropdown1").hover(
 			function(){
 				$("#dropdownList1").stop(true,true).slideToggle(300);
 		});
-		
 		$("#dropdown2").hover(
 		function(){
 			$("#dropdownList2").stop(true,true).slideToggle(300);
 		});
-
-	
 	} else {
-		
 		$("#dropdown1").on('click',
 		function(){
 			$("#dropdownList1").stop(true,true).slideToggle(300);
 		});
-		
 		$("#dropdown2").on('click',
 			function(){
 				$("#dropdownList2").stop(true,true).slideToggle(300);
 		});
-		
 	}
-
-//購票
+	//購票
 		$(".bottom-bar").each(function(){
-		
 		var $window = $(window),
-//			$header = $('.visual .text'),
+			//$header = $('.visual .text'),
 			$header = $(this),
-			
 			headerOffsetTop = $header.offset().top;
-		
-		
 		$window.on("scroll",function(){
-			
 			if($window.scrollTop() > headerOffsetTop){
 				$(".bottom-bar").addClass("bar-active");
 			} else {
 				$(".bottom-bar").removeClass("bar-active");
-			}			
-			
+			}
 		});
-
-		
 	});
- 		
-	
-
-	
-
 });
