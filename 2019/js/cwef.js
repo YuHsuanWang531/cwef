@@ -25,30 +25,30 @@ $(function(){
 	}
 	// opening影片
 	if (width > 769) {
-		$("video").attr('poster', 'img/2019cwef-summer-opening-pc.jpg');
-		$('video source.mp4').attr('src', 'img/2019cwef-summer-opening-pc.mp4');
+		$("video").attr('poster', 'img/2019cwef-summer-opening-v2-pc.png');
+		$('video source.mp4').attr('src', 'img/2019cwef-summer-opening-v2-pc.mp4');
 	};
 	if (iPad) {
 		iPhone = false;
 		android = false;
 		$('video').load();
-		$("video").attr('poster', 'img/2019cwef-summer-opening-pad.jpg');
-		$('video source.mp4').attr('src', 'img/2019cwef-summer-opening-pad.mp4');
+		$("video").attr('poster', 'img/2019cwef-summer-opening-v2-pad.png');
+		$('video source.mp4').attr('src', 'img/2019cwef-summer-opening-v2-pad.mp4');
 	}
 	if (iPhone) {
 		iPad = false;
 		android = false;
 		$('video').load();
-		$("video").attr('poster', 'img/2019cwef-summer-opening-mobile.jpg');
-		$('video source.mp4').attr('src', 'img/2019cwef-summer-opening-mobile.mp4');
+		$("video").attr('poster', 'img/2019cwef-summer-opening-v2-mobile.png');
+		$('video source.mp4').attr('src', 'img/2019cwef-summer-opening-v2-mobile.mp4');
 	}
 	if (android) {
 		iPad = false;
 		iPhone = false;
 		var video = document.querySelector('video');
 		$('video').load();
-		$("video").attr('poster', 'img/2019cwef-summer-opening-mobile.jpg');
-		$('video source.mp4').attr('src', 'img/2019cwef-summer-opening-mobile.mp4');
+		$("video").attr('poster', 'img/2019cwef-summer-opening-v2-mobile.png');
+		$('video source.mp4').attr('src', 'img/2019cwef-summer-opening-v2-mobile.mp4');
 		window.addEventListener('touchstart', function videoStart() {
 			video.play();
 			this.removeEventListener('touchstart', videoStart);
