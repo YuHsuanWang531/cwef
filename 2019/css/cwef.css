@@ -152,12 +152,37 @@ header {
 .inner-page header {
 	padding-top: 65px;
 }
-.report-page header {
-	background: #0062b0; /* Old browsers */
-	background: -moz-radial-gradient(center, ellipse cover, #0062b0 0%, #0b308e 50%, #000750 100%); /* FF3.6-15 */
-	background: -webkit-radial-gradient(center, ellipse cover, #0062b0 0%,#0b308e 50%,#000750 100%); /* Chrome10-25,Safari5.1-6 */
-	background: radial-gradient(ellipse at center, #0062b0 0%,#0b308e 50%,#000750 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0062b0', endColorstr='#000750',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+#bg1 {
+	background: url(../img/about/box1.jpg) center center no-repeat;
+	background-size: cover;
+}
+#bg2 {
+	background: url(../img/about/box2.jpg) center center no-repeat;
+	background-size: cover;
+}
+#bg3 {
+	background: url(../img/about/box3.jpg) center center no-repeat;
+	background-size: cover;
+}
+#bg4 {
+	background: url(../img/about/box4.jpg) center center no-repeat;
+	background-size: cover;
+}
+#bg5 {
+	background: url(../img/about/box5.jpg) center center no-repeat;
+	background-size: cover;
+}
+#bg6 {
+	background: url(../img/about/box6.jpg) center center no-repeat;
+	background-size: cover;
+}
+#bg7 {
+	background: url(../img/about/box7.jpg) center center no-repeat;
+	background-size: cover;
+}
+#bg8 {
+	background: url(../img/about/box8.jpg) center center no-repeat;
+	background-size: cover;
 }
 .download-page header {
 	background: #0062b0; /* Old browsers */
@@ -457,6 +482,7 @@ section h2.report-h2 {
 }
 .inner-page header h2 {
 	color: #fff;
+	text-shadow: 2px 2px rgba(0,0,0,0.8)
 }
 .inner-page header h2 span{
 	color: #ccc;
@@ -1715,24 +1741,20 @@ a.outer-btn:hover {
 	color: #fff;
 }
 .trend .box-txt {
-	margin: 38px auto;
+	margin: 60px auto;
 	text-align: center;
 }
 .trend .box-txt h3 span,
 .trend .box-txt p span {
 	display: block;
 }
-.trend .box-type1 .box-txt h3 {
-    font-size: 37px;
+.trend  .box-txt h3 {
+    font-size: 40px;
     font-weight: 400;
     line-height: 1.2;
 	margin: 0;
-}
-.trend .box-type2 .box-txt h3 {
-    font-size: 46px;
-    font-weight: 400;
-    line-height: 1.2;
-	margin: 0;
+	color: white;
+	text-shadow: 2px 2px #000;
 }
 .trend .box-txt p {
     font-weight: 200;
@@ -1757,58 +1779,56 @@ a.outer-btn:hover {
 	line-height: 1;
 }
 .trend .btn-wrap {
-	margin: 0;
+	margin: 15px 0;
 }
 .trend .box1 {
 	background: url(../img/about/box1.jpg) center center no-repeat;
 	background-size: cover;
 }
-.trend .box8 {
-	background: url(../img/about/box8.jpg) center center no-repeat;
+.trend .box2 {
+	background: url(../img/about/box2.jpg) center center no-repeat;
 	background-size: cover;
 }
-.trend .box6 {
-	background: url(../img/about/box6.jpg) center center no-repeat;
+.trend .box3 {
+	background: url(../img/about/box3.jpg) center center no-repeat;
 	background-size: cover;
 }
 .trend .box4 {
 	background: url(../img/about/box4.jpg) center center no-repeat;
 	background-size: cover;
 }
-.trend .box10 {
-	background: url(../img/about/box10.jpg) center center no-repeat;
+.trend .box5 {
+	background: url(../img/about/box5.jpg) center center no-repeat;
 	background-size: cover;
 }
-.trend .box2,.trend .box7 {
-	background: #036EB8;
+.trend .box6 {
+	background: url(../img/about/box6.jpg) center center no-repeat;
+	background-size: cover;
 }
-.trend .box3,.trend .box5,.trend .box9 {
-	background: #0B308E;
+.trend .box7 {
+	background: url(../img/about/box7.jpg) center center no-repeat;
+	background-size: cover;
 }
+.trend .box8 {
+	background: url(../img/about/box8.jpg) center center no-repeat;
+	background-size: cover;
+}
+
 .trend .box1,
 .trend .box8,
 .trend .box6,
 .trend .box7 {
 	display: flex;	
 }
-.trend .box1 .box-txt,
-.trend .box8 .box-txt,
-.trend .box6 .box-txt,
-.trend .box7 .box-txt  {
-	margin: auto;
-}
 .trend .btn-wrap a {
 	margin: 40px auto 0;
-    padding: 3px 18px 3px calc(18px + 0.3em);
-    color: #fff;
-    font-size: 13px;
-    letter-spacing: 0.3em;
-    line-height: 28px;
-    border: 1px solid #fff;
-}
-.trend .btn-wrap a:hover {
-	background-color: rgba(255,255,255,0.8);
+    padding: 5px 15px 5px calc(18px + 0.3em);
 	color: #373737;
+	background-color: rgba(255,255,255,0.5);
+    letter-spacing: 0.3em;
+}
+.trend .btn-wrap a:hover {	
+	color: #009fd1;
 }
 .trend .trend-more-btn {
 	display: none;
@@ -1847,31 +1867,22 @@ a.outer-btn:hover {
 	.trend .box6,
 	.trend .box7 {
 	}
-/*
-	.trend .box1 .box-txt,
-	.trend .box8 .box-txt {
-		margin: 0px auto;
-	}
-*/
 	.trend .box-txt {
-/*		margin: 20px auto;*/
-		margin: 0;
+		margin: 0 auto;
     	padding: 20px 0;
 	}
 
 	.trend .box-type1 .box-txt h3,
 	.trend .box-type2 .box-txt h3,
 	.trend .horizontal-box h3 {
-		font-size: 24px;
+		font-size: 26px;
 	}
 
 	.trend .box-txt p span,
 	.trend .box-txt h3 span {
 		display: inline;
 	}
-	.trend .trend-mobile-none .trend-box:nth-child(2) {
-		background: #222;
-	}
+
 	#report .card .card-body {
     	margin-bottom: 30px;
 	}
