@@ -215,17 +215,18 @@ li.dropdown a {
 }
 
 li.dropdown ul.dropdownList {
-    position: absolute;
-    left: -48px;
-    top: 58px;
-    width: 130px;
+	position: absolute;
+    left: -30px;
+    top: 60px;
+    width: 140px;
     padding: 0;
-	background-color: #eee;
-/*	margin-top: 20px;*/
-	text-align: center;
-	list-style: none;
-
+    background-color: #eee;
+    /* margin-top: 20px; */
+    text-align: center;
+    list-style: none;
+    vertical-align: center;
     display: none;
+    line-height: normal;
 }
 li.dropdown-item {
 	border-bottom: 2px solid #fff;
@@ -234,6 +235,10 @@ li.dropdown-item:nth-last-child(1) {
 	border-bottom: none;
 }
 nav ul.navbar-nav li.dropdown ul.dropdownList a {
+	color: #333;
+}
+nav ul.navbar-nav li.dropdown ul.dropdownList a:hover {
+	background-color: #Fc0;
 	color: #333;
 }
 
@@ -454,14 +459,13 @@ section.report {
 	padding-bottom: 125px;
 	background-color: #fafafa;
 }
-.inner-page header h2,
-section h2 {
+.inner-page header h2, section h2 {
 	margin-top: 0;
 	margin-bottom: 25px;
 	font-size: 62px;
-	font-weight: 200;
 	line-height: 1.175;
 	letter-spacing: 0.075em;
+	font-weight: 200;
 }
 .inner-page header h2 span,
 section h2 span {
@@ -1754,7 +1758,7 @@ a.outer-btn:hover {
     line-height: 1.2;
 	margin: 0;
 	color: white;
-	text-shadow: 2px 2px #000;
+	text-shadow: 2px 2px rgba(0,0,0,0.8);
 }
 .trend .box-txt p {
     font-weight: 200;
@@ -1782,24 +1786,21 @@ a.outer-btn:hover {
 	margin: 15px 0;
 }
 .trend .box1 {
-	background: url(../img/about/box1.jpg) center center no-repeat;
-	background-size: cover;
+	background-color: #FFCC00;
 }
 .trend .box2 {
 	background: url(../img/about/box2.jpg) center center no-repeat;
 	background-size: cover;
 }
 .trend .box3 {
-	background: url(../img/about/box3.jpg) center center no-repeat;
-	background-size: cover;
+	background-color: #4CABAD;
 }
 .trend .box4 {
 	background: url(../img/about/box4.jpg) center center no-repeat;
 	background-size: cover;
 }
 .trend .box5 {
-	background: url(../img/about/box5.jpg) center center no-repeat;
-	background-size: cover;
+	background-color: #FF8F00;
 }
 .trend .box6 {
 	background: url(../img/about/box6.jpg) center center no-repeat;
@@ -1810,8 +1811,7 @@ a.outer-btn:hover {
 	background-size: cover;
 }
 .trend .box8 {
-	background: url(../img/about/box8.jpg) center center no-repeat;
-	background-size: cover;
+	background-color: #2973A9;
 }
 
 .trend .box1,
