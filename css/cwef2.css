@@ -1,0 +1,199 @@
+header {
+	width: 100%;
+	overflow: hidden;
+}
+.index-page header {
+	background-color: #cd000c;
+	background-image: -moz-linear-gradient(-30deg, #cd000c 15%, #BEBBD6 62%, #4D4DFF 98%);
+	background-image: -webkit-linear-gradient(-30deg, #cd000c 15%,#BEBBD6 62%,#4D4DFF 98%);
+	background-image: linear-gradient(120deg, #cd000c 15%,#BEBBD6 62%,#4D4DFF 98%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cd000c', endColorstr='#4D4DFF',GradientType=1 );
+}
+.inner-page header {
+	padding-top: 65px;
+	background-color: #4d4dff;
+	background-image: -moz-linear-gradient(left, #4d4dff 0%, #bebbd6 100%);
+	background-image: -webkit-linear-gradient(left, #4d4dff 0%,#bebbd6 100%);
+	background-image: linear-gradient(to right, #4d4dff 0%,#bebbd6 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4d4dff', endColorstr='#bebbd6',GradientType=1 );
+}
+header .row {
+	position: relative;
+	padding: 100px 0;
+	align-items: center;
+}
+.index-page header .row:before,
+header .row:after {
+	content: '';
+	display: block;
+	position: absolute;
+	bottom: 0;
+	background-repeat: no-repeat;
+	background-size: contain;
+	z-index: 0;
+}
+.index-page header .row:before {
+	left: -75%;
+	width: 1520px;
+	height: 540px;
+	background-image: url(../img/dot@1.5x.png);
+	background-position: bottom right;
+}
+header .row:after {
+	right: -50%;
+	width: 797px;
+	height: 759px;
+	background-image: url(../img/dotW@1.5x.png);
+	background-position: bottom left;
+}
+.index-page header .title h1 {
+	margin: 25px 0;
+	color: #fff;
+	font-size: 56px;
+	font-weight: 200;
+	line-height: 1.2;
+	letter-spacing: -0.025em;
+}
+.index-page header .title h5 {
+	margin: 0;
+	color: #E6E6E6;
+	font-size: 28px;
+	font-weight: 500;
+	letter-spacing: 0.2em;
+}
+.index-page header .title p {
+	color: #E6E6E6;
+	font-size: 19px;
+	font-weight: 400;
+	letter-spacing: 0.5em;
+}
+.index-page header .title p.h3 {
+	color: #fff;
+	font-size: 16px;
+}
+.index-page header .title p span.year {
+	letter-spacing: 0.5em;
+}
+.index-page header .title p span.name {
+	margin: 0 0.25em;
+	color: #191919;
+}
+.index-page header .title, 
+.index-page header .info {
+	z-index: 1;
+}
+.index-page header .info {
+	position: relative;
+	padding-top: 35px;
+	text-align: center;
+}
+.index-page header .info time {
+	color: #fff;
+	font-size: 53px;
+	font-weight: 300;
+}
+.index-page header .info p {
+	margin-top: 0;
+	color: #fff;
+	font-size: 23px;
+	letter-spacing: 0.2em;
+}
+.index-page header .info p span {
+	margin: 0 5px;
+	font-size: 17px;
+}
+.index-page header .info a.btn {
+	position: relative;
+	display: inline-block;
+	padding: 10px 35px 10px calc(35px + 0.3em);
+	color: #3F3FA0;
+	font-weight: 400;
+	letter-spacing: 0.3em;
+	background-color: #fff;
+}
+.inner-page header h2,
+section h2 {
+	margin-top: 0;
+	margin-bottom: 25px;
+	font-size: 62px;
+	font-weight: 200;
+	line-height: 1.175;
+	letter-spacing: 0.075em;
+}
+.inner-page header h2 span,
+section h2 span {
+	display: block;
+	font-size: 24px;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+}
+.inner-page header h2 {
+	display: inline-block;
+	color: #fff;
+	text-align: center;
+}
+.inner-page header h2 span {
+	color: #ccc;
+}
+@media (max-width: 767px) {
+	.index-page header {
+		background-position: center;
+		background-size: 150% 150%;
+	}
+	.index-page header .row:before {
+		display: none;
+	}
+	.index-page header .row:after {
+		opacity: 0.5;
+	}
+}
+@media (min-width: 768px) {
+	.index-page header .row {
+		position: relative;
+		padding: 125px 0;
+		align-items: center;
+	}
+	.index-page header .title h1 {
+		font-size: 88px;
+	}
+	.index-page header .title h5 {
+		font-size: 34px;
+	}
+	.index-page header .title p {
+		font-size: 17px;
+	}
+	.index-page header .title p.h3 {
+		font-size: 18px;
+	}
+	.index-page header .info time {
+		font-size: 48px;
+	}
+}
+@media (min-width: 992px) {
+	.index-page header .info {
+		padding-top: 32.5%;
+	}
+}
+@media (min-width: 1367px) {
+	.index-page header .row {
+		padding: 200px 0;
+	}
+	.index-page header .title h1 {
+		font-size: 98px;
+	}
+	.index-page header .title h5 {
+		font-size: 38px;
+	}
+	.index-page header .title p {
+		font-size: 19px;
+	}
+	.index-page header .title p.h3 {
+		font-size: 20px;
+	}
+}
+@media (min-width: 1400px) {
+	.index-page header .row {
+		padding: 250px 0;
+	}
+}
