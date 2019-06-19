@@ -399,6 +399,7 @@ footer {
 	background-color: #191919;
 }
 footer .row {
+	margin-bottom: 0;
 	align-items: center;
 }
 footer p > span {
@@ -1201,6 +1202,22 @@ section.sponsor ul {
 }
 section.sponsor ul img {
 	max-width: 80%;
+}
+.askbtn{
+	position: fixed;
+	right: 3%;
+	bottom: 3%;
+	width: 80px;
+	height: 80px;
+	z-index: 21;
+	background-color: #009fd1;
+}
+a.ask{
+	display: block;
+	color: white;
+	font-size: 22px;
+	padding: 8px 0 0 18px;
+	box-sizing: border-box
 }
 #btnTop {
 	position: absolute;

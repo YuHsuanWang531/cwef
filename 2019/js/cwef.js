@@ -116,7 +116,7 @@ $(function(){
 	navbarCollapse();
 	// Collapse the navbar when page is scrolled
 	$(window).scroll(navbarCollapse);
-	if (!location.href.match('review|report|download|ppt')) {
+	if (!location.href.match('review|report|download|ppt|ask')) {
 		new WOW().init();
 		// Activate scrollspy to add active class to navbar items on scroll
 		$('body').scrollspy({
