@@ -294,7 +294,8 @@ nav ul.navbar-nav li.dropdown ul.dropdownList a:hover {
     border-color: #036EB8;
 }
 
-@media (max-width: 768px) {
+/*@media (max-width: 768px) {*/
+@media (max-width: 1199px) {
 	nav .wrapper-menu {
 		display: flex;
 	}
@@ -321,7 +322,15 @@ nav ul.navbar-nav li.dropdown ul.dropdownList a:hover {
 		padding: 0;
 	}
 }
-@media (min-width: 769px) {
+@media (max-width: 1199px) and (min-width: 768px) {
+	nav ul.navbar-nav {
+		max-width: 690px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+/*@media (min-width: 769px) {*/
+@media (min-width: 1200px) {
 	nav ul.navbar-nav {
 		text-align: right;
 	}
@@ -1550,7 +1559,8 @@ section.subscription h5 {
 	}
 */
 }
-@media (max-width: 767px) {
+/*@media (max-width: 767px) {*/
+@media (max-width: 1199px) {
 	section.tipsBlock .circle {
 		margin: 0 auto 1em;
 	}

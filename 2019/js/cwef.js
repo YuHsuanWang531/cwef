@@ -54,7 +54,8 @@ $(function(){
 			this.removeEventListener('touchstart', videoStart);
 		});
 	}
-	if ( width < 769 ) {
+	// if ( width < 769 ) {
+	if ( width < 1200 ) {
 		$('.page-scroll').click(function() {
 			$('.navbarDiv').slideUp();
 			$('.wrapper-menu').removeClass('open');
