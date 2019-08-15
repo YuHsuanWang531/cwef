@@ -612,6 +612,7 @@ section .itemBody a.btn:hover {
 	color: #fff;
 	background-color: #808080;
 }
+
 /*
 section .owl-carousel .owl-nav .owl-prev,
 section .owl-carousel .owl-nav .owl-next {
@@ -1017,7 +1018,7 @@ section.agenda .agendaList a.more:hover {
 	background-color: #fff;
 }
 section.agenda_file {
-	background-color: #353535;
+	/*background-color: #353535;*/
 }
 section.agenda_file > .container-fluid > .row {
 	justify-content: center;
@@ -1030,9 +1031,8 @@ section.agenda_file .agenda-sponsor {
 section.agenda_file .agenda-sponsor a.btn {
 	position: relative;
 	display: block;
-	max-width: 87.5%;
-	margin: 30px auto 50px;
-	padding: 10px 25px 10px calc(25px + 0.3em);
+	padding: 15px 30px 15px calc(25px + 0.3em);
+	margin: 0 0 0 15px;
 	color: #191919;
 	font-weight: 500;
 	letter-spacing: 0.3em;
@@ -1486,7 +1486,7 @@ section.subscription h5 {
 	section.agenda_file .agenda-sponsor {
 		display: flex;
 		width: 200px;
-		margin-left: 15px;
+		margin: 20px 0 ;
 		flex-wrap: wrap;
 		align-items: center;
 	}
@@ -1654,6 +1654,16 @@ section.subscription h5 {
 }
 .card .card-body a.btn {
 	margin: 40px auto 0;
+	padding: 3px 18px 3px calc(18px + 0.3em);
+	color: #808080;
+	font-size: 15px;
+	letter-spacing: 0.3em;
+	line-height: 28px;
+	background-color: #fff;
+	border: 1px solid #808080;
+}
+.card .card-body a.btnonly {
+	margin: 15px auto 0;
 	padding: 3px 18px 3px calc(18px + 0.3em);
 	color: #808080;
 	font-size: 15px;
